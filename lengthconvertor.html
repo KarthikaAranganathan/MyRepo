@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Length Convertor</title>
+    <style>
+      body {
+        margin: 0;
+        background: linear-gradient(to left bottom, pink, black);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: monospace;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 20px;
+        box-shadow: 0 6px 10px rgba(26, 22, 22, 0.3);
+        width: 85%;
+        height: 300px;
+        text-align: center;
+        color: aquamarine;
+      }
+      #btn {
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        padding: 10px;
+        width: 200px;
+      }
+      #btn:hover {
+        background-color: chocolate;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+      }
+      #result {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="text">Length Convertor</h1>
+      <h2>Centemeter to Inch Convertion</h2>
+
+      <div>
+        <input type="text" id="input" placeholder="length in cm " />
+      </div>
+      <div>
+        <button id="btn" onclick="convert()">Convert</button>
+      </div>
+      <div id="result"></div>
+      <script src="length.js"></script>
+    </div>
+  </body>
+</html>
